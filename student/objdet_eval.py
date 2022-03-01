@@ -12,8 +12,8 @@
 
 # general package imports
 import numpy as np
-import matplotlib
-matplotlib.use('wxagg') # change backend so that figure maximizing works on Mac as well
+# import matplotlib
+# matplotlib.use('wxagg') # change backend so that figure maximizing works on Mac as well
 import matplotlib.pyplot as plt
 
 import torch

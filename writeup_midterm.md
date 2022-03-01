@@ -12,9 +12,32 @@ Before we start to convert range images to point-clouds, we first visualize rang
 
 ### 2. Converting Range Images to Point Clouds
 
-![](img/lidar_point_cloud.png)
+- Visualize the point cloud in Open3D
+- 10 examples from point cloud with varying degrees of visibility
 
-From these results, we can see the rear-bumper and tail-lights are the major components.
+
+![](img/lidar_point_cloud_1.png)
+
+![](img/lidar_point_cloud_2.png)
+
+![](img/lidar_point_cloud_3.png)
+
+![](img/lidar_point_cloud_4.png)
+
+![](img/lidar_point_cloud_5.png)
+
+![](img/lidar_point_cloud_6.png)
+
+![](img/lidar_point_cloud_7.png)
+
+![](img/lidar_point_cloud_8.png)
+
+![](img/lidar_point_cloud_9.png)
+
+![](img/lidar_point_cloud_10.png)
+
+
+From these results, we can see the `rear-bumper` and `tail-lights` are the main stable features. In some cases, we can find `front-bumper`, `car headlights`, `license plate`, `windshields`, `sides of vehicles` also are stable features
 
 ## Step 2. Create Birds-Eye View (BEV) from Lidar PCL
 
