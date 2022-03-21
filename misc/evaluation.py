@@ -232,11 +232,12 @@ def plot_rmse(manager, all_labels, configs_det):
 def make_movie(path):
     # read track plots
     images = [img for img in sorted(os.listdir(path)) if img.endswith(".png")]
-    frame = cv2.imread(os.path.join(path, images[0]))
+    frame = cv2.imread(os.path.join(path, images[10]))
     height, width, layers = frame.shape
 
     # save with 10fps to result dir
-    video = cv2.VideoWriter(os.path.join(path, 'my_tracking_results.avi'), 0, 10, (width,height))
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    video = cv2.VideoWriter(os.path.join(path, 'my_tracking_results.avi'), fourcc, 10, (width, height))
 
     for image in images:
         fname = os.path.join(path, image)
